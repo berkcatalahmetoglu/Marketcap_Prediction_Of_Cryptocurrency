@@ -1,0 +1,28 @@
+@import "~react-toastify/dist/ReactToastify.min.css";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "OpenSans-Medium";
+}
+
+@font-face {
+  font-family: Gazpacho-Bold;
+  src: url("./Gazpacho Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Gazpacho-Medium;
+  src: url("./Gazpacho Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: OpenSans-Bold;
+  src: url("./OpenSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: OpenSans-Medium;
+  src: url("./OpenSans-Medium.ttf") format("truetype");
+}
