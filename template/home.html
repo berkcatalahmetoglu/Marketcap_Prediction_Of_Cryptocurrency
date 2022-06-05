@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Deployment Tutorial 1</title>
+
+</head>
+
+<body>
+
+ <div class="login">
+  <div class = 'content'>
+    <div class = "heading">
+      <h1>Cryptocurrency Market Cap Prediction</h1>
+    </div>
+
+
+    <form action="{{ url_for('predict') }}" method="post">
+      <div class ='InsideContent'>
+
+          <div class = 'block'>
+                <label>Volume:</label>
+                <input type="text" name="volume" placeholder="Enter Trading Volume" size="80" height="50" required="required" />
+          </div>
+          <div class = 'block'>
+                <label>Social Volume:</label>
+                <input type="text" name="social_volume" placeholder="Enter social volume" size="80" required="required" />
+          </div>
+          <div class = 'block'>
+                <label>Social Dominance:</label>
+        		    <input type="text" name="social_dominance" placeholder="Enter social dominance" size="80" required="required" />
+          </div>
+
+
+          <div class = 'block'>
+            <label>Twitter Volume:</label>
+            <input type="text" name="twitter_volume" placeholder="Enter twitter volume" size="80" required="required" />
+          </div>
+
+          <div class = 'block'>
+            <label>Bearish Sentiment:</label>
+            <input type="text" name="bearish_sentiment" placeholder="Enter bearish sentiment" size="80" required="required" />
+          </div>
+
+          <div class = 'block'>
+            <label>Bullish Sentiment:</label>
+            <input type="text" name="bullish_sentiment" placeholder="Enter bullish sentiment" size="80" required="required" />
+          </div>
+
+          <div class = 'block'>
+            <label>Market Dominance:</label>
+            <input type="text" name="market_dominance" placeholder="Enter Market Dominance" size="80" required="required" />
+          </div>
+
+          <div class = 'block'>
+                <label>Symbol:</label>
+                    <select name="Condition" id="dropdownblock" style="width: 80px;">
+                    <option value="BTC">BTC</option>
+                    <option value="ETH">ETH</option>
+                    <option value="LTC">LTC</option>
+                </select>
+          </div>
+
+      </div>
+
+            <button type="submit" class="btn btn-primary btn-block btn-large">Predict Cryptocurrency market cap</button>
+    </form>
+  </div>
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>
